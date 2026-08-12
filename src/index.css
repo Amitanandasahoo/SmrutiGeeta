@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon: #6e1f2a;
+  --color-maroon-deep: #4a1420;
+  --color-gold: #d9a441;
+  --color-cream: #f4e9d8;
+  --color-walnut: #2b1710;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+
+  --animate-cassette-spin: spin 6s linear infinite;
+}
