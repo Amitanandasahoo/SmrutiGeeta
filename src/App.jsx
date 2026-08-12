@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+// Imported two new icons for the YT Music button
+import { PlayCircle, ArrowUpRight } from "lucide-react"; 
 import Player from "./components/Player";
 import songs from "./assets/Song";
 import bgImage from "./assets/bg_IMG.png";
@@ -18,9 +20,25 @@ const TopClock = () => {
   }).toLowerCase();
 
   return (
-    <div className="absolute top-6 left-8 text-white/90 font-medium text-lg tracking-wide drop-shadow-md z-10">
+    <div className="absolute top-6 left-6 sm:left-8 text-white/90 font-medium text-base sm:text-lg tracking-wide drop-shadow-md z-10">
       {timeString}
     </div>
+  );
+};
+
+// Creates the top right YouTube Music link
+const YTMusicLink = () => {
+  return (
+    <a 
+      href="https://music.youtube.com/playlist?list=PLbf-25ASdaoA&si=iZvwXrgBpgUkf7TR" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="absolute top-6 right-6 sm:right-8 flex items-center gap-1.5 sm:gap-2 text-white/90 font-medium text-sm sm:text-base tracking-wide drop-shadow-md hover:text-white hover:scale-105 transition-all z-10"
+    >
+      <PlayCircle size={18} className="fill-current/20" />
+      <span>YT Music</span>
+      <ArrowUpRight size={16} className="opacity-70" />
+    </a>
   );
 };
 
@@ -42,7 +60,7 @@ const getLiveTrackIndex = (totalSongs) => {
 };
 
 function App() {
-  // Instead of starting at 0, we start at the synchronized Live Radio index
+  // Starts at the synchronized Live Radio index
   const [currentIndex, setCurrentIndex] = useState(() => getLiveTrackIndex(songs.length));
 
   return (
@@ -51,6 +69,8 @@ function App() {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <TopClock />
+      <YTMusicLink />
+      
       <Player songs={songs} currentIndex={currentIndex} onIndexChange={setCurrentIndex} />
     </div>
   );
