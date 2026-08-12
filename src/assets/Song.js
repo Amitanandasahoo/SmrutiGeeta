@@ -29,12 +29,6 @@ const songs = [
     youtubeId: "nWaUg6hU6IU",
   },
   {
-    id: 5,
-    title: "Srabana Rutu Thiba",
-    artist: "Babul Supriyo",
-    youtubeId: "DrtxYNb-Ea8",
-  },
-  {
     id: 6,
     title: "Chithi Mora Asilani",
     artist: "Udit Narayan, Bobby Sweet",
@@ -123,6 +117,48 @@ const songs = [
     title: "Kie Pabanare",
     artist: "Ira Mohanty",
     youtubeId: "74CgLByOetw",
+  },
+  {
+    id: 21,
+    title: "Janha Re Tate Punei Rana",
+    artist: "Udit Narayan",
+    youtubeId: "tuw-QB2Ud7k",
+  },
+  {
+    id: 22,
+    title: "Megha Re Megha Tu Kahinki Jauchu",
+    artist: "Sourin Bhatt",
+    youtubeId: "aLRfLmAy-HA",
+  },
+  {
+    id: 23,
+    title: "Sarbana Re Sarbana",
+    artist: "Udit Narayan",
+    youtubeId: "scVLC1nVHjA",
+  },
+  {
+    id: 24,
+    title: "Phagunara Rangare",
+    artist: "Prashanta Kumar",
+    youtubeId: "RZN5GlbmjPA",
+  },
+  {
+    id: 25,
+    title: "Tama Rana Tame Bhari Bhala Disucha",
+    artist: "Sourin Bhatt",
+    youtubeId: "FsfIWT0BFcc",
+  },
+  {
+    id: 26,
+    title: "Sholati Faguna Asi",
+    artist: "Subhasish Mahakud",
+    youtubeId: "WvXM4h8zTao",
+  },
+  {
+    id: 27,
+    title: "Mana Ku Tora Chorei Neli",
+    artist: "Kumar Sanu",
+    youtubeId: "qQBJBitZxyU",
   }
 ];
 
